@@ -147,3 +147,12 @@ li a:hover {
   background-color: #fff;
   color: #000;
 }
+
+.span-p {
+  font-size: 1.5em;
+}
+
+.span-p span {
+  font-weight: bold;
+  color: blue;
+}
