@@ -59,7 +59,7 @@
     <form name="basic" class="basic-form">
       <div class="more-form">
         <label for="favcolor">Choose a favorite color:</label>
-        <select>
+        <select id="colors">
           <option disabled selected value>-- Choose a color --</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
@@ -82,12 +82,12 @@
   <script>
     function result() {
       let name = document.getElementById("fname").value;
-      // let movie = document.forms.basic.movie.value;
-      // let color = document.forms.basic.favcolor.value;
+      let movie = document.querySelector('input[name="movie"]:checked').value
+      let color = document.querySelector('#colors').value
 
       document.getElementById("out-name").innerHTML = name;
-      // document.getElementById("out-movie").innerHTML = movie;
-      // document.getElementById("out-color").innerHTML = color;
+      document.getElementById("out-movie").innerHTML = movie;
+      document.getElementById("out-color").innerHTML = color;
     }
   </script>
 </html>
