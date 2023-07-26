@@ -446,3 +446,22 @@ li a:hover {
   width: 200px;
   text-align: center;
 }
+
+.out-form {
+  margin: 32px;
+}
+
+#out-name {
+  color: #009;
+}
+
+#out-movie,
+#out-color,
+#out-name {
+  margin-left: 16px;
+}
+
+#out-movie,
+#out-color {
+  font-size: 1.2em;
+}
